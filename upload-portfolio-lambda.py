@@ -39,9 +39,9 @@ def lambda_handler(event, context):
         if job:
             codepipeline = boto3.client('codepipeline')
             codepipeline.put_job_success_result(jobId=job['id'])
-            
-    expect:
+        
+    except:
         topic.publish(Subject="Portfolio Deployed Failed", Message="Portfolio deployed failed!")
         raise
     
-    return 'Hello lambda function'
+    return 'Hello lambda function.'

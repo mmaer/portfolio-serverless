@@ -1,14 +1,21 @@
-version: 0.1
-
-phases:
-  build:
-    commands:
-      - npm install
-      - npm run webpack
+---
 artifacts:
   files:
     - index.html
     - favicon.ico
-    - styles/main.css
+    - styles/*
     - images/*
     - dist/bundle.js
+    - js/main.js
+    - js/example-work.js
+    - js/example-work-modal.js
+    - js/babel-standalone.js
+phases:
+  build:
+    commands:
+      - "npm run webpack"
+  pre_build:
+    commands:
+      - "npm install"
+      - "npm test"
+version: 0.1
