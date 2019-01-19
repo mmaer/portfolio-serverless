@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Watch be go to Babel town</title>
+    <style media="screen">
+      .errorBox {
+        border: 1px solid red;
+        background-color: #eeebbb;
+        margin: 1em;
+        padding: 2em;
+      }
+      .errorBox--hidden{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- wrap the input field with a label -->
+      <label> Insert Name: <input id="name" type="text"></label>
+      <button id="submit_button">Click here</button>
+
+      <div id="content"></div>
+      <div id="error" class="errorBox--hidden"> </div>
+
+    </main>
+    <!-- use unpkg to get the babel scripts from CDN -->
+    <script src="https://unpkg.com/babel-standalone"></script>
+    <!-- use latest version of babel, or you could specify -->
+    <script type="text/babel" data-presets="latest">
+const getMessage = name => `hello (js) world, ${name}!`;
+// get access to the button
+const button = document.getElementById("submit_button");
+// get access to the error message style
+const errorArea = document.getElementById("error");
+button.addEventListener("click", evt => {
+  // let for variables, rather than const(ant)
+  // could also use var - but that is legacy now
+  let name = document.getElementById("name").value;
+  if (name.length < 2) {
+    errorArea.textContent = "Enter a proper name please";
+    // use the non-hidden style
+    errorArea.className = "errorBox";
+    document.getElementById("content").textContent = "";
+    //alert("insert a name!");
+    // don't need alert because we are using on screen style instead
+  } else {
+    // message shows up on click.
+    document.getElementById("content").textContent = getMessage(name);
+    // use the hidden style
+    errorArea.className = "errorBox--hidden";
+  }
+});
+</script>
+  </body>
+</html>

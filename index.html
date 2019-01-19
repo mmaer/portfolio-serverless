@@ -1,145 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>A Portfolio In The Cloud2</title>
-    <link rel="stylesheet" href="styles/main.css"/>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<head>
+  <meta charset="utf-8">
+  <title>Michael Pearce learns about serverless</title>
+  <link rel="stylesheet" href="styles/main.css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo"/>
-  </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <main class="overflow--auto">
-      <h1 class="color--skyBlue section__heading--largest">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Wire+One" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <main class="overflow--auto">
+    <h1 class="color--purple section__heading--largest">
         <!--Your name goes here -->
-        CLOUD GURU
+        Michael Pearce
       </h1>
 
-      <ul class="section--social">
+    <ul class="section--social">
 
-        <!--Links to relevant professional social media & resume -->
-        <!-- See: http://fontawesome.io/icons/#brand for more -->
+      <!--Links to relevant professional social media & resume -->
+      <!-- See: http://fontawesome.io/icons/#brand for more -->
 
-        <!-- Link to Linked In profile -->
-        <li class="socialWrapper">
-          <a class="color--skyBlue social"
-             title="LinkedIn Profile"
-             target="_blank"
-             href="#">
-            <i class="fa fa-linkedin"></i>
+      <!-- Link to Linked In profile -->
+      <li class="socialWrapper">
+        <a class="color--purple social" title="LinkedIn Profile" target="_blank" href="https://uk.linkedin.com/in/pearcem0">
+            <i class="fa fa-linkedin-square"></i>
           </a>
-        </li>
+      </li>
 
-        <!-- Link to GitHub profile -->
-        <li class="socialWrapper color--skyBlue">
-          <a class="social color--skyBlue"
-             title="GitHub Profile"
-             target="_blank"
-             href="#">
-            <i class="fa fa-github"></i>
+      <!-- Link to GitHub profile -->
+      <li class="socialWrapper color--purple">
+        <a class="social color--purple" title="GitHub Profile" target="_blank" href="https://github.com/pearcem0">
+            <i class="fa fa-github-square"></i>
           </a>
-        </li>
+      </li>
 
-        <!-- Link to resume, probably a .pdf -->
-        <li class="socialWrapper">
-          <a class="social color--skyBlue"
-             title="Resume"
-             href="#">
-            <i class="fa fa-file-text"></i>
-          </a>
-        </li>
-      </ul>
-    </main>
+    </ul>
+  </main>
 
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        Portfolio
+  <section class="background--imgBeach1 section">
+    <h2 class="color--cloud margin--none section__text--centered">
+        Technical Portfolio
       </h2>
-    </section>
+  </section>
 
-    <section class="section section--alignCentered section--description">
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving code"
-               class="section__exampleImage"
-               src="images/example1.png"/>
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
+  <div id="example-work"></div>
 
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving chemistry"
-               class="section__exampleImage"
-               src="images/example2.png"/>
-          <!-- “Chemistry” by Surian Soosay is licensed under CC BY 2.0
-               https://www.flickr.com/photos/ssoosay/4097410999 -->
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered ">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
-
-      <div class="section__exampleWrapper">
-        <div class="section__example">
-          <img alt="example screenshot of a project involving cats"
-               class="section__exampleImage"
-               src="images/example3.png"/>
-          <!-- “Bengal cat” by roberto shabs is licensed under CC BY 2.0
-               https://www.flickr.com/photos/37287295@N00/2540855181 -->
-          <dl class="color--cloud">
-            <dt class="section__exampleTitle section__text--centered">
-              Work Example
-            </dt>
-            <dd></dd>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="background--skyBlue section">
-      <h2 class="color--cloud margin--none section__text--centered">
-        About Me
+  <section class="background--imgBeach2 section">
+    <h2 class="color--cloud margin--none section__text--centered">
+        About the page
       </h2>
-    </section>
+  </section>
 
-    <section class="section section--alignCentered section--description">
-      <p class="color--darkgrey section__description">
-        I am learning to code in the cloud! I like to work hard and learn new things.
-        I want to work for a company that will pay me to code in the cloud!
-      </p>
-
-    <div class="background--skyBlue modal--closed">
-      <span class="color--cloud modal__closeButton">
-        <i class="fa fa-window-close-o"></i>
-      </span>
-      <img alt="example screenshot of a project involving code"
-           class="modal__image"
-           src="images/example1.png"/>
-      <div class="color--cloud modal__text">
-        <h2 class="modal__title">
-          Work Example Name
-        </h2>
-        <a class="color--skyBlue modal__link"
-           href="#">
-          Check it out
-        </a>
-        <p class="modal__description">
-          A long description of the work in question.
-        </p>
-      </div>
+  <section class="section section--alignCentered section--description">
+    <p class="color--darkgrey section__description">
+      Inspired by the online course by <a href="https://acloud.guru">acloud.guru</a> this is an introduction to ReactJS development, developed and built with a 'serverless' workflow. The technical portfolio utilises technologies, frameworks and services
+      including ReactJS, babel, jest, enzyme, python and an array of AWS services. The source code is openely available on <a href="https://www.github.com/pearcem0/serverless-portfolio">github.com</a>.
+    </p>
+    <br>
+    <div id="serverlessDiagram">
     </div>
+    <h2>A bit about me</h2>
+    <p>Certified Linux & AWS professional, developing and maintaining cloud computing platforms such as AWS and Salesforce.
+    </p>
 
-  </body>
+    <script type="text/javascript" src="dist/bundle.js">
+    </script>
+</body>
+
 </html>
